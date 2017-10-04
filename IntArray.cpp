@@ -51,7 +51,6 @@ int * IntArray::end(){
 	return &data[len];
 }
 
-
 int main(int argc, char * args[]) {
         IntArray a(3);
         a[0] = 10;
