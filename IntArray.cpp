@@ -25,7 +25,7 @@ IntArray::IntArray(int size){
 }
 
 IntArray::~IntArray(){
-	delete data;
+	delete [] data;
 }
 
 int & IntArray::operator[](int i) const {
@@ -37,11 +37,11 @@ int IntArray::size() const {
 }
 	
 void IntArray::fill(int k){
-		for(int x=0;x<len;x++)
-		{
-			data[x] = k;
-		}
+	for(int x=0;x<len;x++)
+	{
+		data[x] = k;
 	}
+}
 
 int * IntArray::begin(){
 	return data;
